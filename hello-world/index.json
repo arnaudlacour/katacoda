@@ -4,6 +4,7 @@
   "difficulty": "beginner",
   "time": "2 minutes",
   "details": {
+    "assets": { "client": [{"file": "PingDirectory.lic", "target": "/home/scrapbook/"}] },
     "steps": [{
       "title": "Step 1 - Run Command",
       "text": "step1.md"
