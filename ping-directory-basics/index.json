@@ -6,15 +6,15 @@
     "assets": { "client": [{"file": "PingDirectory.lic", "target": "/home/scrapbook/tutorial"}] },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Getting started",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Manipulating data",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Loading the server",
         "text": "step3.md"
       }
     ],
