@@ -4,8 +4,8 @@ This is your first step.
 
 Here is how to start Ping Directory in a container
 
-`docker run -d -p 1389:389
-    --name ping-directory 
+`docker run -d -p 1389:389 \
+    --name ping-directory \
     --env-file PingDirectory.lic \
     pingidentity/ping-directory:latest`{{execute}}
 
