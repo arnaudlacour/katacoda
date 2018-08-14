@@ -1,0 +1,1 @@
+docker pull pingidentity/ping-directory:katacoda
