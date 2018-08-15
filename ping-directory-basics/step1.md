@@ -1,12 +1,13 @@
-This is your first step.
+Without further ado, let's start a Ping Directory docker container!
 
 ## Run Ping Directory in Docker
 
-Here is how to start Ping Directory in a container
+Here is how:
 
-`docker run -d -p 1389:389 \
-    --name ping-directory \
+`docker run -d -p 1389:389       \
+    --name ping-directory        \
     --env-file PingDirectory.lic \
+    --env KATACODA=TRUE          \
     pingidentity/ping-directory:katacoda`{{execute}}
 
 Docker will download the Ping Directory image and run it.
