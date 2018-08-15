@@ -36,7 +36,7 @@
     "uilayout": "terminal",
     "uimessage1": "Ping Directory on Docker tutorial",
     "showdashboard": true,
-    "dashboards": [{"name": "Console", "port":8080}]
+    "dashboards": [{"name": "Console", "port":8443}]
 
   },
   "backend": {
