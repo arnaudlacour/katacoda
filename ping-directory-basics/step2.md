@@ -29,6 +29,7 @@ The same command as above can be done in 3 easy steps
 3. Bonus points
 
 close the interactive shell
+
 `exit`{{execute}}
 
 At the end of the day, how you use the tool is a matter of taste.
