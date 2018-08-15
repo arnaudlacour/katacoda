@@ -1,5 +1,6 @@
 {
-  "title": "Ping Directory Basics",
+  "pathwayTitle": "Ping Directory",
+  "title": "Ping Directory Docker Basics",
   "description": "A very simple introduction to running Ping Directory in Docker",
   "time": "5 minutes",
   "details": {
@@ -27,7 +28,9 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "icon": "fa-docker",
+    "uilayout": "terminal",
+    "uimessage1": "Ping Directory Docker tutorial"
   },
   "backend": {
     "imageid": "docker"
