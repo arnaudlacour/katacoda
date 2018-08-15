@@ -1,6 +1,7 @@
-
+#Ping Directory + Docker
 Welcome to this tutorial!
-You are going to learn how to start Ping Directory in Docker and get familiar with its basics.
+
+Here you are going to learn how to start Ping Directory in Docker and get familiar with its basics.
 
 ## Overview
 Ping Directory is a powerful yet streamlined solution to help solve tough identity data problems.
