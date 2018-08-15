@@ -5,8 +5,9 @@
   "details": {
     "assets": {
       "client": [
-          {"file": "PingDirectory.lic", "target": "/home/scrapbook/tutorial/"}
-        ]
+        {"file": "PingDirectory.lic", "target": "/home/scrapbook/tutorial/"}
+        {"file": "console.war", "target": "/home/scrapbook/tutorial/"}
+      ]
       },
     "steps": [
       {
@@ -24,7 +25,8 @@
     ],
     "intro": {
       "text": "intro.md",
-      "courseData": "intro-course-data.sh"
+      "courseData": "intro-course-data.sh",
+      "code": "intro-code.sh"
     },
     "finish": {
       "text": "finish.md"

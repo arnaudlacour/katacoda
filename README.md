@@ -1,10 +1,2 @@
-# Interactive Katacoda Scenarios
+# Interactive Katacoda Scenarios for Ping Directory 
 
-[![](http://shields.katacoda.com/katacoda/@rno/count.svg)](https://www.katacoda.com/@rno "Get your profile on Katacoda.com")
-
-Visit https://www.katacoda.com/@rno to view the profile and interactive scenarios
-
-### Writing Scenarios
-Visit https://www.katacoda.com/docs to learn more about creating Katacoda scenarios
-
-For examples, visit https://github.com/katacoda/scenario-example
