@@ -4,7 +4,15 @@
   "description": "A very simple introduction to running Ping Directory in Docker",
   "time": "5 minutes",
   "details": {
-    "assets": { "client": [{"file": "PingDirectory.lic", "target": "/home/scrapbook/tutorial"}] },
+    "assets": { 
+      "client": [
+          {"file": "PingDirectory.lic", "target": "/home/scrapbook/tutorial"},
+          {"file": "console.war", "target": "/home/scrapbook/tutorial" }
+        ],
+      "host01": [
+          {"file": "console.war", "target": "~" }
+        ]
+      },
     "steps": [
       {
         "title": "Getting started",
