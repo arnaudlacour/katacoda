@@ -6,7 +6,7 @@
   "details": {
     "assets": {
       "client": [
-          {"file": "*", "target": "/home/scrapbook/tutorial"}
+          {"file": "*", "target": "/home/scrapbook/tutorial/"}
         ]
       },
     "steps": [
@@ -36,7 +36,7 @@
     "uilayout": "terminal",
     "uimessage1": "Ping Directory on Docker tutorial",
     "showdashboard": true,
-    "dashboards": [{"name": "Administration Console", "port":8080}]
+    "dashboards": [{"name": "Console", "port":8080}]
 
   },
   "backend": {
