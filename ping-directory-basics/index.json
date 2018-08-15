@@ -30,7 +30,7 @@
   "environment": {
     "icon": "fa-docker",
     "uilayout": "terminal",
-    "uimessage1": "Ping Directory Docker tutorial"
+    "uimessage1": "Ping Directory on Docker tutorial"
   },
   "backend": {
     "imageid": "docker"
