@@ -5,7 +5,7 @@
   "details": {
     "assets": {
       "client": [
-        {"file": "PingDirectory.lic", "target": "/home/scrapbook/tutorial/"}
+        {"file": "PingDirectory.lic", "target": "/home/scrapbook/tutorial/"},
         {"file": "console.war", "target": "/home/scrapbook/tutorial/"}
       ]
       },
