@@ -24,7 +24,7 @@ The same command as above can be done in 3 easy steps
 
 2. Issue the same command as before (without the docker call)
 
-/opt/server/bin/ldapsearch -b dc=example,dc=com "(uid=user.0)"
+`/opt/server/bin/ldapsearch -b dc=example,dc=com "(uid=user.0)"`{{execute}}
 
 3. Bonus points
 
