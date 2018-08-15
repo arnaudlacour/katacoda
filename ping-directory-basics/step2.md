@@ -26,9 +26,9 @@ The same command as above can be done in 3 easy steps
 
 `/opt/server/bin/ldapsearch -b dc=example,dc=com "(uid=user.0)"`{{execute}}
 
-3. Bonus points
+3. Return to the host shell
 
-close the interactive shell
+close the docker interactive shell
 
 `exit`{{execute}}
 
