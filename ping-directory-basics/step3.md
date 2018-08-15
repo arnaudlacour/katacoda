@@ -8,6 +8,7 @@ Ping Directory comes with several tools to help in sizing excercises, like searc
 	--filter "(uid=user.[0-9999])" \
 	--attribute mail \
 	--numThreads 2 \
+	--numIntervals 4 \
 	--ratePerSecond 50`{{execute}}
 
 This is primarily aimed at getting a sense of the read performance when testing a new platform for example.
@@ -22,9 +23,10 @@ Ping Directory also has a tool to load the server with write traffic, called mod
 	--attribute description \
 	--valueLength 8 \
 	--numThreads 2	\
+	--numIntervals 4 \
 	--ratePerSecond 50`{{execute}}
 
-Let it run for a while to look at response time, throughput, consistency ...
+Look at response time, throughput, consistency and get familiar with this output
 
 
 ### Take a look at the changes
@@ -41,4 +43,5 @@ Another tool, to get a feel authentication latency and throughput
 	--filter "(uid=user.[0-9999])"\
 	--credentials password \
 	--numThreads 2 \
+	--numIntervals 4 \
 	--ratePerSecond 50`{{execute}}
