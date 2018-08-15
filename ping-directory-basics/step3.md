@@ -1,5 +1,7 @@
-## Reading en-masse
+## Loading the server with synthetic traffic
+
 Ping Directory comes with several tools to help in sizing excercises, like searchrate:
+
 `docker exec -it ping-directory /opt/server/bin/searchrate \
 	-b dc=example,dc=com \
 	--scope sub \
@@ -8,11 +10,35 @@ Ping Directory comes with several tools to help in sizing excercises, like searc
 	--numThreads 2 \
 	--ratePerSecond 50`{{execute}}
 
-## Updating en-masse
-`docker exec -it ping-directory /opt/server/bin/searchrate \
-	-b dc=example,dc=com \
-	--scope sub \
-	--filter "(uid=user.[0-9999])" \
-	--attribute mail \
+This is primarily aimed at getting a sense of the read performance when testing a new platform for example.
+
+
+## Making bulk changes
+
+Ping Directory also has a tool to load the server with write traffic, called modrate:
+
+`docker exec -it ping-directory /opt/server/bin/modrate \
+	--entryDN "uid=user.[0:9999],ou=people,dc=example,dc=com" \
+	--attribute description \
+	--valueLength 8 \
+	--numThreads 2	\
+	--ratePerSecond 50`{{execute}}
+
+Let it run for a while to look at response time, throughput, consistency ...
+
+
+### Take a look at the changes
+
+Issuing this command, you can verify that the description attribute was modified 
+
+`docker exec -it ping-directory /opt/server/bin/ldapsearch -b dc=example,dc=com "(uid=user.0)" description`{{execute}}
+
+
+## Measuring authentication performance
+Another tool, to get a feel authentication latency and throughput
+`docker exec -it ping-directory /opt/server/bin/authrate \
+	--baseDN dc=example,dc=com --scope sub \
+	--filter "(uid=user.[0-9999])"\
+	--credentials password \
 	--numThreads 2 \
 	--ratePerSecond 50`{{execute}}
