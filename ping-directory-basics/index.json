@@ -6,11 +6,7 @@
   "details": {
     "assets": { 
       "client": [
-          {"file": "PingDirectory.lic", "target": "/home/scrapbook/tutorial"},
-          {"file": "console.war", "target": "/home/scrapbook/tutorial" }
-        ],
-      "host01": [
-          {"file": "console.war", "target": "~" }
+          {"file": "*", "target": "/home/scrapbook/tutorial"}
         ]
       },
     "steps": [
@@ -38,7 +34,10 @@
   "environment": {
     "icon": "fa-docker",
     "uilayout": "terminal",
-    "uimessage1": "Ping Directory on Docker tutorial"
+    "uimessage1": "Ping Directory on Docker tutorial",
+    "showdashboard": true,
+    "dashboards": [{"name": "Administration Console",}]
+
   },
   "backend": {
     "imageid": "docker"
