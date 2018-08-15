@@ -1,12 +1,11 @@
 {
-  "pathwayTitle": "Ping Directory",
   "title": "Ping Directory Docker Basics",
   "description": "A very simple introduction to running Ping Directory in Docker",
-  "time": "5 minutes",
+  "time": "10 minutes",
   "details": {
     "assets": {
       "client": [
-          {"file": "*", "target": "/home/scrapbook/tutorial/"}
+          {"file": "PingDirectory.lic", "target": "/home/scrapbook/tutorial/"}
         ]
       },
     "steps": [
