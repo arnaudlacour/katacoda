@@ -4,7 +4,7 @@
   "description": "A very simple introduction to running Ping Directory in Docker",
   "time": "5 minutes",
   "details": {
-    "assets": { 
+    "assets": {
       "client": [
           {"file": "*", "target": "/home/scrapbook/tutorial"}
         ]
