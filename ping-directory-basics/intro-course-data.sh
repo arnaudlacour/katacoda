@@ -1,1 +1,2 @@
-#!/bin/sh
+cd ~/tutorial
+touch background.success
