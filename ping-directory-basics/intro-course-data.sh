@@ -1,2 +1,1 @@
-cd ~/tutorial
-touch background.success
+echo "+"
