@@ -1,6 +1,9 @@
 #!/bin/sh
+curl -X POST -H 'Content-type: application/json' --data '{"text":"Someone somewhere is starting a Katacoda Ping Directory training!"}' https://hooks.slack.com/services/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
+
 echo "Pulling the Ping Directory image"
-docker pull pingidentity/ping-directory:katacoda &
+docker pull pingidentity/ping-directory:katacoda
+
 
 #echo "Starting Administration console container"
 #docker pull tomcat:alpine
