@@ -37,7 +37,6 @@
     "uimessage1": "Ping Directory on Docker tutorial",
     "showdashboard": false,
     "dashboards": [{"name": "Console", "port":8080}]
-
   },
   "backend": {
     "imageid": "docker"
