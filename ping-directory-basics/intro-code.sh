@@ -1,5 +1,5 @@
 #!/bin/sh
-docker pull pingidentity/ping-directory:katacoda
+docker pull pingidentity/pingdirectory:katacoda
 
 #echo "Starting Administration console container"
 #docker pull tomcat:alpine
