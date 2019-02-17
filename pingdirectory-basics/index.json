@@ -20,6 +20,10 @@
       {
         "title": "Loading the server",
         "text": "step3.md"
+      },
+      {
+        "title": "Using the web admin console",
+        "text": "step4.md"
       }
     ],
     "intro": {
