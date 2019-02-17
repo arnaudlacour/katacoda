@@ -2,7 +2,7 @@
 
 A handy way to check on the server status summery
 
-`docker exec -it ping-directory /opt/server/bin/status --summary`{{execute}}
+`docker exec -it pingdirectory /opt/out/instance/bin/status --summary`{{execute}}
 
 
 ## Search data
@@ -11,7 +11,7 @@ A handy way to check on the server status summery
 
 Search one of the sample users present in Ping Directory 
 
-`docker exec -it ping-directory /opt/server/bin/ldapsearch -b dc=example,dc=com "(uid=user.0)"`{{execute}}
+`docker exec -it pingdirectory /opt/out/instance/bin/ldapsearch -b dc=example,dc=com "(uid=user.0)"`{{execute}}
 
 
 ### Internally
@@ -20,11 +20,11 @@ The same command as above can be done in 3 easy steps
 
 1. Grab an interactive shell
 
-`docker exec -it ping-directory sh`{{execute}}
+`docker exec -it pingdirectory sh`{{execute}}
 
 2. Issue the same command as before (without the docker call)
 
-`/opt/server/bin/ldapsearch -b dc=example,dc=com "(uid=user.0)"`{{execute}}
+`/opt/out/instance/bin/ldapsearch -b dc=example,dc=com "(uid=user.0)"`{{execute}}
 
 3. Return to the host shell
 
