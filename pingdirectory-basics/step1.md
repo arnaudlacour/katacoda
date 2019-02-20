@@ -23,7 +23,7 @@ This ensures that the different containers can communicate with each other
     -p 1443:443             \
     --network pingnet       \
     --name pingdirectory    \
-    -e SERVER_PROFILE_URL=git@github.com:pingidentity/server-profile-pingdirectory-basic.git \
+    -e SERVER_PROFILE_URL=https://github.com/pingidentity/server-profile-pingdirectory-basic.git \
     pingidentity/pingdirectory`{{execute}}
 
 ### Start the admin console
