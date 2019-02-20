@@ -24,7 +24,7 @@ This ensures that the different containers can communicate with each other
     --network pingnet       \
     --name pingdirectory    \
     -e SERVER_PROFILE_URL=git@github.com:pingidentity/server-profile-pingdirectory-basic.git \
-    pingidentity/ping-directory`{{execute}}
+    pingidentity/pingdirectory`{{execute}}
 
 ### Start the admin console
 `docker run -d              \
