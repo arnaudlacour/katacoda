@@ -23,8 +23,8 @@ This ensures that the different containers can communicate with each other
     -p 1443:443             \
     --network pingnet       \
     --name pingdirectory    \
-    -e MAX_HEAP_SIZE=320m   \
-    -e SERVER_PROFILE_URL=https://github.com/pingidentity/server-profile-pingdirectory-basic.git \
+    -e SERVER_PROFILE_URL=https://github.com/pingidentity/server-profile-pingidentity-getting-started.git \
+    -e SERVER_PROFILE_PATH=pingdirectory \
     pingidentity/pingdirectory`{{execute}}
 
 ### Start the admin console
