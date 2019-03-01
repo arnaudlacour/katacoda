@@ -28,16 +28,18 @@ This ensures that the different containers can communicate with each other
     pingidentity/pingdirectory`{{execute}}
 
 ### Start the admin console
+While the server is starting up in the background, issue this command:
 `docker run -d              \
     -p 8080:8080            \
     --network pingnet       \
     --name pingdataconsole  \
     pingidentity/pingdataconsole`{{execute}}
+This will start a separate container on the same docker network with the administration console.
 
-## Look at live logs
-You can look at the container starting up with this command:
-
+### Look at live logs
+You can look at the pingdirectory container starting up with this command:
 `docker logs -f pingdirectory`{{execute}}
-
 Once the server is up and running, Ctrl-C out of the log tail.
-You now have a running Ping Directory container, ready for the next steps...
+You now have a running Ping Directory container, you are ready for the next step...
+
+

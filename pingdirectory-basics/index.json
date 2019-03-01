@@ -39,8 +39,8 @@
     "icon": "fa-docker",
     "uilayout": "terminal",
     "uimessage1": "Ping Directory on Docker tutorial",
-    "showdashboard": false,
-    "dashboards": [{"name": "Console", "port":8080}]
+    "showdashboard": true,
+    "dashboards": [{"name": "Console", "href":"https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/admin-console"}]
   },
   "backend": {
     "imageid": "ubuntu"
