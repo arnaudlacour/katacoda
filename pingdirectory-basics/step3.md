@@ -5,7 +5,7 @@ Ping Directory comes with several tools to help in sizing excercises, like searc
 `docker exec -it pingdirectory /opt/out/instance/bin/searchrate \
 	-b dc=example,dc=com \
 	--scope sub \
-	--filter "(uid=user.[0-9])" \
+	--filter "(uid=user.[0-4])" \
 	--attribute mail \
 	--numThreads 2 \
 	--numIntervals 4 \
@@ -19,7 +19,7 @@ This is primarily aimed at getting a sense of the read performance when testing 
 Ping Directory also has a tool to load the server with write traffic, called modrate:
 
 `docker exec -it pingdirectory /opt/out/instance/bin/modrate \
-	--entryDN "uid=user.[0:9],ou=people,dc=example,dc=com" \
+	--entryDN "uid=user.[0:4],ou=people,dc=example,dc=com" \
 	--attribute description \
 	--valueLength 8 \
 	--numThreads 2	\
