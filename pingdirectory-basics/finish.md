@@ -1,5 +1,5 @@
 
 ## Congratulations !
 
-Congratulations on finishing your very first introduction to Ping Directory on Docker!
+Congratulations on finishing your very first introduction to PingDirectory on Docker!
 

@@ -9,7 +9,7 @@ A handy way to check on the server status summery
 
 ### Externally from the container
 
-Search one of the sample users present in Ping Directory 
+Search one of the sample users present in PingDirectory 
 
 `docker exec -it pingdirectory /opt/out/instance/bin/ldapsearch -b dc=example,dc=com "(uid=user.0)"`{{execute}}
 

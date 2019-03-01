@@ -1,6 +1,6 @@
 ## Loading the server with synthetic traffic
 
-Ping Directory comes with several tools to help in sizing excercises, like searchrate:
+PingDirectory comes with several tools to help in sizing excercises, like searchrate:
 
 `docker exec -it pingdirectory /opt/out/instance/bin/searchrate \
 	-b dc=example,dc=com \
@@ -16,7 +16,7 @@ This is primarily aimed at getting a sense of the read performance when testing 
 
 ## Making bulk changes
 
-Ping Directory also has a tool to load the server with write traffic, called modrate:
+PingDirectory also has a tool to load the server with write traffic, called modrate:
 
 `docker exec -it pingdirectory /opt/out/instance/bin/modrate \
 	--entryDN "uid=user.[0:4],ou=people,dc=example,dc=com" \

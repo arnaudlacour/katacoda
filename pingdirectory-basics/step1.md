@@ -4,12 +4,12 @@ You can verify that Docker is installed with
 and
 `docker info`{{execute}}
 
-Check that the Ping Directory image is present:
+Check that the PingDirectory image is present:
 `docker images`{{execute}}
 
-Without further ado, let's start a Ping Directory docker container!
+Without further ado, let's start a PingDirectorydocker container!
 
-## Run Ping Directory in Docker
+## Run PingDirectory in Docker
 
 Here is how:
 
@@ -40,6 +40,4 @@ This will start a separate container on the same docker network with the adminis
 You can look at the pingdirectory container starting up with this command:
 `docker logs -f pingdirectory`{{execute}}
 Once the server is up and running, Ctrl-C out of the log tail.
-You now have a running Ping Directory container, you are ready for the next step...
-
-
+You now have a running PingDirectorycontainer, you are ready for the next step...

@@ -1,6 +1,6 @@
 {
-  "title": "Ping Directory Docker Basics",
-  "description": "A very simple introduction to running Ping Directory in Docker",
+  "title": "PingDirectory Docker Basics",
+  "description": "A very simple introduction to running PingDirectory in Docker",
   "time": "10 minutes",
   "details": {
     "assets": {
@@ -38,7 +38,7 @@
   "environment": {
     "icon": "fa-docker",
     "uilayout": "terminal",
-    "uimessage1": "Ping Directory on Docker tutorial",
+    "uimessage1": "PingDirectory on Docker tutorial",
     "showdashboard": true,
     "dashboards": [{"name": "Console", "href":"https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/admin-console"}]
   },
