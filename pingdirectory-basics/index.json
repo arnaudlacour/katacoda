@@ -43,6 +43,6 @@
     "dashboards": [{"name": "Console", "port":8080}]
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "ubuntu"
   }
 }
