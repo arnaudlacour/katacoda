@@ -1,47 +1,12 @@
-## Loading the server with synthetic traffic
+## Get server status
 
-PingDirectory comes with several tools to help in sizing excercises, like searchrate:
+A handy way to check on the server status summery
 
-`docker exec -it pingdirectory searchrate \
-	-b dc=example,dc=com \
-	--scope sub \
-	--filter "(uid=user.[0-4])" \
-	--attribute mail \
-	--numThreads 2 \
-	--numIntervals 4 \
-	--ratePerSecond 10`{{execute}}
-
-This is primarily aimed at getting a sense of the read performance when testing a new platform for example.
+`docker exec -it pingdirectory status --summary`{{execute}}
 
 
-## Making bulk changes
+## Search data
 
-PingDirectory also has a tool to load the server with write traffic, called modrate:
+Search one of the sample users present in PingDirectory 
 
-`docker exec -it pingdirectory modrate \
-	--entryDN "uid=user.[0:4],ou=people,dc=example,dc=com" \
-	--attribute description \
-	--valueLength 8 \
-	--numThreads 2	\
-	--numIntervals 4 \
-	--ratePerSecond 10`{{execute}}
-
-Look at response time, throughput, consistency and get familiar with this output
-
-
-### Take a look at the changes
-
-Issuing this command, you can verify that the description attribute was modified 
-
-`docker exec -it pingdirectory ldapsearch -b dc=example,dc=com "(uid=user.0)" description`{{execute}}
-
-
-## Measuring authentication performance
-Another tool, to get a feel authentication latency and throughput
-`docker exec -it pingdirectory authrate \
-	--baseDN dc=example,dc=com --scope sub \
-	--filter "(uid=user.[0-4])"\
-	--credentials 2FederateM0re \
-	--numThreads 2 \
-	--numIntervals 4 \
-	--ratePerSecond 4`{{execute}}
+`docker exec -it pingdirectory ldapsearch -b dc=example,dc=com "(uid=user.0)"`{{execute}}

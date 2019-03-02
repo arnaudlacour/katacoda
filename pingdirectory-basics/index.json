@@ -12,20 +12,24 @@
         },
         "steps": [
             {
-                "title": "Getting started",
+                "title": "Getting Ready",
                 "text": "step1.md"
             },
             {
-                "title": "Manipulating data",
+                "title": "Starting containers",
                 "text": "step2.md"
             },
             {
-                "title": "Loading the server",
+                "title": "Manipulating data",
                 "text": "step3.md"
             },
             {
-                "title": "Using the web admin console",
+                "title": "Loading the server",
                 "text": "step4.md"
+            },
+            {
+                "title": "Using the web admin console",
+                "text": "step5.md"
             }
         ],
         "intro": {
@@ -54,6 +58,10 @@
             {
                 "name": "CLI Reference",
                 "href": "https://docs.ping.directory/latest_PingDirectory/cli/index.html"
+            },
+            {
+                "name": "Server Profile",
+                "href": "https://github.com/pingidentity/server-profile-pingidentity-getting-started/tree/master/pingdirectory"
             }
         ]
     },

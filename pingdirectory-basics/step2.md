@@ -1,37 +1,28 @@
-## Get server status
+### Start the admin console
+While the server is starting up in the background, issue this command:
+`docker run -d --rm         \
+    -p 8080:8080            \
+    --network pingnet       \
+    --name pingdataconsole  \
+    pingidentity/pingdataconsole`{{execute}}
+This will start a separate container on the same docker network with the administration console.
+We'll get to this in a few steps.
 
-A handy way to check on the server status summery
+### Start PingDirectory
+`docker run -d --rm         \
+    -p 1389:389             \
+    -p 1443:443             \
+    --network pingnet       \
+    --name pingdirectory    \
+    -e SERVER_PROFILE_URL=https://github.com/pingidentity/server-profile-pingidentity-getting-started.git \
+    -e SERVER_PROFILE_PATH=pingdirectory \
+    pingidentity/pingdirectory`{{execute}}
 
-`docker exec -it pingdirectory status --summary`{{execute}}
+### Check it's starting
+`docker container ls`{{execute}}
 
-
-## Search data
-
-### Externally from the container
-
-Search one of the sample users present in PingDirectory 
-
-`docker exec -it pingdirectory ldapsearch -b dc=example,dc=com "(uid=user.0)"`{{execute}}
-
-
-### Internally
-
-The same command as above can be done in 3 easy steps
-
-1. Grab an interactive shell
-
-`docker exec -it pingdirectory sh`{{execute}}
-
-2. Issue the same command as before (without the docker call)
-
-`ldapsearch -b dc=example,dc=com "(uid=user.0)"`{{execute}}
-
-3. Return to the host shell
-
-close the docker interactive shell
-
-`exit`{{execute}}
-
-At the end of the day, how you use the tool is a matter of taste.
-
-Whatever gets the job done.
+### Look at live logs
+You can look at the pingdirectory container starting up with this command:
+`docker logs -f pingdirectory`{{execute}}
+Once the server is up and running, Ctrl-C out of the log tail.
+You now have a running PingDirectorycontainer, you are ready for the next step...
