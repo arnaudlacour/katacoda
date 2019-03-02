@@ -39,7 +39,7 @@
     },
     "environment": {
         "icon": "fa-docker",
-        "uilayout": "terminal",
+        "uilayout": "terminal-iframe",
         "uimessage1": "PingDirectory on Docker tutorial",
         "showdashboard": true,
         "dashboards": [
