@@ -24,11 +24,20 @@
       }
     },
     "environment": {
-      "icon": "fa-docker",
-      "uilayout": "terminal",
-      "uimessage1": "Ping Federate on Docker tutorial",
-      "showdashboard": true,
-      "dashboards": [{"name": "Console", "href":"https://[[HOST_SUBDOMAIN]]-9999-[[KATACODA_HOST]].environments.katacoda.com/pingfederate/app"}]
+        "icon": "fa-docker",
+        "uilayout": "terminal-iframe",
+        "uimessage1": "PingFederate on Docker tutorial",
+        "showdashboard": true,
+        "dashboards": [
+            {
+                "name": "Console",
+                "href":"https://[[HOST_SUBDOMAIN]]-9999-[[KATACODA_HOST]].environments.katacoda.com/pingfederate/app"
+            },
+            {
+                "name": "Playground",
+                "href": "https://[[HOST_SUBDOMAIN]]-9031-[[KATACODA_HOST]].environments.katacoda.com/OAuthPlayground"
+            }
+        ]
     },
     "backend": {
       "imageid": "ubuntu"
