@@ -1,0 +1,36 @@
+{
+    "title": "PingFederate Docker Basics",
+    "description": "A very simple introduction to running Ping Federate in Docker",
+    "time": "10 minutes",
+    "details": {
+      "assets": {
+        "client": [
+          {"file": "*", "target": "/home/scrapbook/tutorial/"}
+        ]
+        },
+      "steps": [
+        {
+          "title": "Getting started",
+          "text": "step1.md"
+        }
+      ],
+      "intro": {
+        "text": "intro.md",
+        "courseData": "intro-course-data.sh",
+        "code": "intro-code.sh"
+      },
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "environment": {
+      "icon": "fa-docker",
+      "uilayout": "terminal",
+      "uimessage1": "Ping Federate on Docker tutorial",
+      "showdashboard": true,
+      "dashboards": [{"name": "Console", "href":"https://[[HOST_SUBDOMAIN]]-9999-[[KATACODA_HOST]].environments.katacoda.com/pingfederate/app"}]
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+  }
