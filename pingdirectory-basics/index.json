@@ -1,48 +1,63 @@
 {
-  "title": "PingDirectory Docker Basics",
-  "description": "A very simple introduction to running PingDirectory in Docker",
-  "time": "10 minutes",
-  "details": {
-    "assets": {
-      "client": [
-        {"file": "*", "target": "/home/scrapbook/tutorial/"}
-      ]
-      },
-    "steps": [
-      {
-        "title": "Getting started",
-        "text": "step1.md"
-      },
-      {
-        "title": "Manipulating data",
-        "text": "step2.md"
-      },
-      {
-        "title": "Loading the server",
-        "text": "step3.md"
-      },
-      {
-        "title": "Using the web admin console",
-        "text": "step4.md"
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "courseData": "intro-course-data.sh",
-      "code": "intro-code.sh"
+    "title": "PingDirectory Docker Basics",
+    "description": "A very simple introduction to running PingDirectory in Docker",
+    "time": "10 minutes",
+    "details": {
+        "assets": {
+            "client": [
+                {
+                    "file": "*", "target": "/home/scrapbook/tutorial/"
+                }
+            ]
+        },
+        "steps": [
+            {
+                "title": "Getting started",
+                "text": "step1.md"
+            },
+            {
+                "title": "Manipulating data",
+                "text": "step2.md"
+            },
+            {
+                "title": "Loading the server",
+                "text": "step3.md"
+            },
+            {
+                "title": "Using the web admin console",
+                "text": "step4.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "courseData": "intro-course-data.sh",
+            "code": "intro-code.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        }
     },
-    "finish": {
-      "text": "finish.md"
+    "environment": {
+        "icon": "fa-docker",
+        "uilayout": "terminal",
+        "uimessage1": "PingDirectory on Docker tutorial",
+        "showdashboard": true,
+        "dashboards": [
+            {
+                "name": "Console", 
+                "href":"http://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/admin-console"
+            },
+            {
+                "name": "Config Reference", 
+                "href":"https://docs.ping.directory/latest_PingDirectory/config-guide/index.html"
+            },
+            {
+                "name": "CLI Reference",
+                "href": "https://docs.ping.directory/latest_PingDirectory/cli/index.html"
+            }
+        ]
+    },
+    "backend": {
+        "imageid": "ubuntu"
     }
-  },
-  "environment": {
-    "icon": "fa-docker",
-    "uilayout": "terminal",
-    "uimessage1": "PingDirectory on Docker tutorial",
-    "showdashboard": true,
-    "dashboards": [{"name": "Console", "href":"https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/admin-console"}]
-  },
-  "backend": {
-    "imageid": "ubuntu"
-  }
 }
