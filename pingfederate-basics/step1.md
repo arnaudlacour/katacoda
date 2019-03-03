@@ -1,18 +1,3 @@
-## Docker
-You can verify that Docker is installed with 
-`docker version`{{execute}}
-and
-`docker info`{{execute}}
-
-Check that the PingFederate image is present:
-`docker images`{{execute}}
-
-Without further ado, let's start a Ping Directory docker container!
-
-## Run Ping Directory in Docker
-
-Here is how:
-
 ### Start PingFederate
 `docker run -d              \
     -p 9031:9031             \
