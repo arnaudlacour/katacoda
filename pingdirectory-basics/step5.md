@@ -1,4 +1,12 @@
 ## Using the Administration Console
+## Start the admin console container
+`docker run -d --rm         \
+    -p 8080:8080            \
+    --network pingnet       \
+    --name pingdataconsole  \
+    pingidentity/pingdataconsole`{{execute}}
+
+## Accessing the console
 There are 3 fields on the login page of the administration console:
 
 server: `pingdirectory`{{copy}}
