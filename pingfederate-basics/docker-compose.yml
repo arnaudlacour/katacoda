@@ -25,6 +25,9 @@ services:
       - SERVER_PROFILE_PARENT=MONITORING
       - SERVER_PROFILE_MONITORING_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
       - SERVER_PROFILE_MONITORING_PATH=monitoring/pingdirectory/jolokia
+      - SERVER_PROFILE_MONITORING_PARENT=LICENSE
+      - SERVER_PROFILE_LICENSE_URL=https://github.com/arnaudlacour/katacoda.git
+      - SERVER_PROFILE_LICENSE_PATH=licenses/pingdirectory
     networks:
       - pingnet
                     
