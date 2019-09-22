@@ -19,7 +19,7 @@ We'll get to this in a few steps.
     --env SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git \
     --env SERVER_PROFILE_PATH=getting-started/pingdirectory \
     --env SERVER_PROFILE_PARENT=LICENSE \
-    --env SERVER_PROFILE_LICENSE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git \
+    --env SERVER_PROFILE_LICENSE_URL=https://github.com/arnaudlacour/katacoda.git \
     --env SERVER_PROFILE_LICENSE_PATH=licenses/pingdirectory \
     pingidentity/pingdirectory`{{execute}}
 

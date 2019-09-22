@@ -4,9 +4,8 @@
     "time": "10 minutes",
     "details": {
       "assets": {
-        "client": [
-          {"file": "*", "target": "/home/scrapbook/tutorial/"}
-        ]
+        "client": [{"file": "docker-compose.yml", "target": "~/"}],
+        "host01": [{"file":"docker-compose.yml", "target":"~/"}]
         },
       "steps": [
         {

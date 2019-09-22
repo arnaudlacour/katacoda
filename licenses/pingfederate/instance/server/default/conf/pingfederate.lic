@@ -1,0 +1,15 @@
+ID=1408851
+Product=PingFederate
+Version=9.3
+IssueDate=2019-09-22
+EnforcementType=5
+ExpirationDate=2019-10-22
+ConnectionLimit=3
+NodeLimit=3
+Tier=Subscription
+SaasProvisioning=true
+WSTrustSTS=true
+OAuth=true
+GracePeriod=0
+SignCode=FF1F
+Signature=302C021400E47B4C0074FA6C914BB64C6664EABB87E79C7902147CCE7DD96FDB6DF351001FA0A135E9258288CB29
