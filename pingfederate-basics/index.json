@@ -4,8 +4,7 @@
     "time": "10 minutes",
     "details": {
       "assets": {
-        "client": [{"file": "docker-compose.yml", "target": "~/"}],
-        "host01": [{"file":"docker-compose.yml", "target":"~/"}]
+        "host01": [{"file":"docker-compose.yml", "target":"/root"}]
         },
       "steps": [
         {
