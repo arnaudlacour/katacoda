@@ -42,6 +42,10 @@
             {
                 "name": "Help",
                 "href": "https://support.pingidentity.com/s/PingFederate-help"
+            },
+            {
+                "name":"devops docs",
+                "href":"https://pingidentity-devops.gitbook.io/devops/"
             }
         ]
     },
