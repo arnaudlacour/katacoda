@@ -12,6 +12,8 @@ services:
       - SERVER_PROFILE_MONITORING_PARENT=LICENSE
       - SERVER_PROFILE_LICENSE_URL=https://github.com/arnaudlacour/katacoda.git
       - SERVER_PROFILE_LICENSE_PATH=licenses/pingdirectory
+    volumes: 
+        - /tmp/pingdrectory/in:/opt/in
     networks:
       - pingnet
                     
@@ -19,6 +21,9 @@ services:
     image: pingidentity/pingdataconsole:edge
     ports:
       - 8443:8443
+      - 8080:8080
+    volumes:
+      - /tmp/pingdataconsole/in:/opt/in
     networks:
       - pingnet
 

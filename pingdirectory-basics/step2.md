@@ -1,13 +1,9 @@
-### Start the admin console
-While the server is starting up in the background, issue this command:
-
-`docker-compose up -d pingdataconsole`{{execute}}
-
-This will start a separate container on the same docker network with the administration console.
-We'll get to this in a few steps.
+### Obtain certificates
+`./obtain-certs.sh [[HOST_SUBDOMAIN]] [[KATACODA_HOST]]`{{execute}}
 
 ### Start PingDirectory
-`docker-compose up -d pingdirectory`{{execute}}
+`export PF_PUBLIC_HOSTNAME=[[HOST_SUBDOMAIN]]-9031-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+`docker-compose up -d`{{execute}}
 
 ### Check it's starting
 `docker ps`{{execute}}

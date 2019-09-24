@@ -4,7 +4,10 @@
     "time": "10 minutes",
     "details": {
         "assets": {
-            "host01": [{"file": "docker-compose.yml", "target": "/root"}]
+            "host01": [
+                { "file": "docker-compose.yml", "target": "/root" },
+                { "file": "obtain-certs.sh", "target": "/root", "chmod": "+x" }
+            ]
         },
         "steps": [
             {
@@ -45,7 +48,7 @@
         "dashboards": [
             {
                 "name": "Console", 
-                "href":"https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/admin-console"
+                "href":"https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/console"
             },
             {
                 "name": "Config Reference", 
