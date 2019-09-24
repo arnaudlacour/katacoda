@@ -61,6 +61,10 @@
             {
                 "name": "Server Profile",
                 "href": "https://github.com/pingidentity/server-profile-pingidentity-getting-started/tree/master/pingdirectory"
+            },
+            {
+                "name": "Help",
+                "href": "https://support.pingidentity.com/s/pingdirectory-help"
             }
         ]
     },
