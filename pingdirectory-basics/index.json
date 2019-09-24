@@ -4,11 +4,7 @@
     "time": "10 minutes",
     "details": {
         "assets": {
-            "client": [
-                {
-                    "file": "*", "target": "/home/scrapbook/tutorial/"
-                }
-            ]
+            "host01": [{"file": "docker-compose.yml", "target": "/root"}]
         },
         "steps": [
             {
@@ -53,11 +49,11 @@
             },
             {
                 "name": "Config Reference", 
-                "href":"https://docs.ping.directory/latest_PingDirectory/config-guide/index.html"
+                "href":"https://docs.ping.directory/PingDirectory/latest/config-guide/index.html"
             },
             {
                 "name": "CLI Reference",
-                "href": "https://docs.ping.directory/latest_PingDirectory/cli/index.html"
+                "href": "https://docs.ping.directory/PingDirectory/latest/cli/index.html"
             },
             {
                 "name": "Server Profile",

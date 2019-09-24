@@ -6,7 +6,3 @@ and
 
 Check that the PingDirectory image is present:
 `docker images`{{execute}}
-
-## Create a network
-This ensures that the different containers can communicate with each other
-`docker network create pingnet`{{execute}}

@@ -33,12 +33,12 @@ Look at response time, throughput, consistency and get familiar with this output
 
 Issuing this command, you can verify that the description attribute was modified 
 
-`docker exec -it pingdirectory ldapsearch -b dc=example,dc=com "(uid=user.0)" description`{{execute}}
+`docker exec -it root_pingdirectory_1 ldapsearch -b dc=example,dc=com "(uid=user.0)" description`{{execute}}
 
 
 ## Measuring authentication performance
 Another tool, to get a feel authentication latency and throughput
-`docker exec -it pingdirectory authrate \
+`docker exec -it root_pingdirectory_1 authrate \
 	--baseDN dc=example,dc=com --scope sub \
 	--filter "(uid=user.[0-4])"\
 	--credentials 2FederateM0re \
