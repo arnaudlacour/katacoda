@@ -16,7 +16,7 @@ docker run \
     -d ${certifiedHostname}
 
 cd /tmp/certs/${certifiedHostname}
-echo "${2:-2FederateM0re}" > ${PWD_FILE}
+echo "${3:-2FederateM0re}" > ${PWD_FILE}
 chmod 600 ${PWD_FILE}
 
 openssl pkcs12 \
