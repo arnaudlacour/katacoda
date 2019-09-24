@@ -34,6 +34,10 @@
             {
                 "name": "Playground",
                 "href": "https://[[HOST_SUBDOMAIN]]-9031-[[KATACODA_HOST]].environments.katacoda.com/OAuthPlayground"
+            },
+            {
+                "name": "Admin API",
+                "href": "https://[[HOST_SUBDOMAIN]]-9999-[[KATACODA_HOST]].environments.katacoda.com/pf-admin-api/api-docs/"
             }
         ]
     },
