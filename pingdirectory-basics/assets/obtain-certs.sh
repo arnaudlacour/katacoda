@@ -1,7 +1,7 @@
 #!/usr/bin/env bash 
 domain="environments.katacoda.com"
 id=${1}
-name=${name}
+name=${2}
 
 PWD_FILE=.pwd
 
@@ -56,7 +56,7 @@ mkdir -p /tmp/pingdirectory/in/instance/config/
 cp keystore truststore /tmp/pingdirectory/in/instance/config/
 cp .pwd /tmp/pingdirectory/in/instance/config/keystore.pin
 cp .pwd /tmp/pingdirectory/in/instance/config/truststore.pin
-chmod 400 cp .pwd /tmp/pingdirectory/in/instance/config/*.pin
+chmod 400 /tmp/pingdirectory/in/instance/config/*.pin
 
 mkdir -p /tmp/pingdataconsole/in
 cp keystore /tmp/pingdataconsole/in/keystore
