@@ -2,7 +2,6 @@
 `./obtain-certs.sh [[HOST_SUBDOMAIN]] [[KATACODA_HOST]]`{{execute}}
 
 ### Start PingDirectory
-`export PF_PUBLIC_HOSTNAME=[[HOST_SUBDOMAIN]]-9031-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 `docker-compose up -d`{{execute}}
 
 ### Check it's starting
